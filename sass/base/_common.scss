@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    transition: all 0.3 cubic-bezier(.16, .57, .53, .99);
+}
+
+body {
+    font-family: "Open sans";
+    background-color: $white;
+}
+
+*::selection {
+    background-color: $cyan-dark;
+    color: $white;
+}
