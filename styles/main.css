@@ -55,7 +55,6 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  outline: darkred dashed;
 }
 @media screen and (min-width: 375px) {
   .container {
@@ -76,6 +75,7 @@ body {
   padding: 18px 0;
   box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
   background-color: #f6f5f4;
+  z-index: 10;
 }
 .header .container {
   display: flex;
@@ -225,5 +225,170 @@ body {
   }
   .header__sign:hover .header__icon {
     fill: #2b788b;
+  }
+}
+.hero {
+  background-color: #f6f5f4;
+  padding: 90px 0 20px;
+}
+.hero__subtitle {
+  color: #2b788b;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.68px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.hero__title {
+  color: #000;
+  text-align: center;
+  font-family: "Dela Gothic One";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1.28px;
+  margin-bottom: 12px;
+}
+.hero__desc {
+  color: #757575;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.56px;
+  margin-bottom: 20px;
+}
+.hero__btn {
+  padding: 12px 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  background: #c3dce3;
+  color: #2b788b;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.56px;
+}
+.hero__btn:hover {
+  color: #fff;
+  background-color: #2b788b;
+}
+.hero__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.hero__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__item:nth-child(1) {
+  padding-right: 40px;
+  margin-right: 40px;
+  border-right: 1px solid #e0e0e0;
+}
+.hero__header {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  margin-bottom: 3px;
+}
+.hero__icon {
+  fill: #2b788b;
+}
+.hero__num {
+  color: #000;
+  font-family: "Dela Gothic One";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.4px;
+}
+.hero__plus {
+  color: #2b788b;
+}
+.hero__info {
+  color: #757575;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.48px;
+}
+@media screen and (min-width: 1210px) {
+  .hero {
+    padding: 183px 0 135px;
+  }
+  .hero .container {
+    position: relative;
+  }
+  .hero__subtitle {
+    text-align: left;
+    margin-bottom: 24px;
+    font-size: 16px;
+    letter-spacing: 2.24px;
+  }
+  .hero__title {
+    text-align: left;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-size: 56px;
+    letter-spacing: -2.24px;
+    width: 530px;
+  }
+  .hero__desc {
+    text-align: left;
+    margin-bottom: 32px;
+    font-family: Montserrat;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+    width: 395px;
+  }
+  .hero__btn {
+    padding: 14px 22px;
+    margin: 0;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: -0.64px;
+  }
+  .hero__list {
+    justify-content: start;
+    margin-bottom: 0;
+  }
+  .hero__item:nth-child(1) {
+    padding-right: 48px;
+    margin-right: 48px;
+  }
+  .hero__header {
+    gap: 10px;
+  }
+  .hero__icon {
+    width: 24px;
+    height: 30px;
+  }
+  .hero__num {
+    color: #000;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.8px;
+  }
+  .hero__plus {
+    color: #2b788b;
+  }
+  .hero__info {
+    color: #757575;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
+  .hero__img {
+    width: 933px;
+    height: 601px;
+    position: absolute;
+    top: 14px;
+    left: 500px;
   }
 }/*# sourceMappingURL=main.css.map */

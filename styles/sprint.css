@@ -55,7 +55,6 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  outline: darkred dashed;
 }
 @media screen and (min-width: 375px) {
   .container {
@@ -76,6 +75,7 @@ body {
   padding: 18px 0;
   box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
   background-color: #f6f5f4;
+  z-index: 10;
 }
 .header .container {
   display: flex;

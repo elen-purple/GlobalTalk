@@ -1,0 +1,197 @@
+.hero {
+    background-color: $grey-light;
+    padding: 90px 0 20px;
+
+    &__subtitle {
+        color: $cyan-dark;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 1.68px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        color: $dark-color;
+        text-align: center;
+        font-family: "Dela Gothic One";
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -1.28px;
+        margin-bottom: 12px;
+    }
+
+    &__desc {
+        color: $grey-dark;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.56px;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        padding: 12px 20px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-radius: 100px;
+        background: $cyan-light;
+        color: $cyan-dark;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.56px;
+
+        &:hover {
+            color: $white;
+            background-color: $cyan-dark;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:nth-child(1) {
+            padding-right: 40px;
+            margin-right: 40px;
+            border-right: 1px solid $grey-medium;
+        }
+    }
+
+    &__header {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+
+    &__icon {
+        fill: $cyan-dark;
+    }
+
+    &__num {
+        color: $dark-color;
+        font-family: "Dela Gothic One";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.4px;
+    }
+
+    &__plus {
+        color: $cyan-dark;
+    }
+
+    &__info {
+        color: $grey-dark;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.48px;
+    }
+
+    &__img {}
+}
+
+@media screen and (min-width: 1210px) {
+    .hero {
+        padding: 183px 0 135px;
+
+        & .container{
+            position: relative;
+        }
+
+        &__subtitle {
+            text-align: left;
+            margin-bottom: 24px;
+            font-size: 16px;
+            letter-spacing: 2.24px;
+        }
+
+        &__title {
+            text-align: left;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            font-size: 56px;
+            letter-spacing: -2.24px;
+            width: 530px;
+        }
+
+        &__desc {
+            text-align: left;
+            margin-bottom: 32px;
+            font-family: Montserrat;
+            font-size: 18px;
+            letter-spacing: -0.72px;
+            width: 395px;
+        }
+
+        &__btn {
+            padding: 14px 22px;
+            margin: 0;
+            margin-bottom: 48px;
+            font-size: 16px;
+            line-height: 1;
+            letter-spacing: -0.64px;
+        }
+
+        &__list {
+            justify-content: start;
+            margin-bottom: 0;
+        }
+
+        &__item {
+
+            &:nth-child(1) {
+                padding-right: 48px;
+                margin-right: 48px;
+            }
+        }
+
+        &__header {
+            gap: 10px;
+        }
+
+        &__icon {
+            width: 24px;
+            height: 30px;
+        }
+
+        &__num {
+            color: $dark-color;
+            font-size: 40px;
+            line-height: 1;
+            letter-spacing: -0.8px;
+        }
+
+        &__plus {
+            color: $cyan-dark;
+        }
+
+        &__info {
+            color: $grey-dark;
+            font-size: 16px;
+            letter-spacing: -0.64px;
+        }
+
+        &__img {
+            width: 933px;
+                height: 601px;
+                position: absolute;
+                top: 14px;
+                left: 500px;
+        }
+    }
+}
