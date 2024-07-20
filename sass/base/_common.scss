@@ -3,11 +3,11 @@ html {
 }
 
 * {
-    transition: all 0.3 cubic-bezier(.16, .57, .53, .99);
+    transition: all 0.3s cubic-bezier(.16, .57, .53, .99);
 }
 
 body {
-    font-family: "Open sans";
+    font-family: "Montserrat";
     background-color: $white;
 }
 

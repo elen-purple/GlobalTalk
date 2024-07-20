@@ -1,0 +1,202 @@
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 18px 0;
+    box-shadow: 0px -1px 0px 0px #E0E0E0 inset;
+    background-color: $grey-light;
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        background-color: transparent;
+        line-height: 0;
+    }
+
+    &__burger {
+        stroke: $dark-color;
+    }
+
+    &__menu:hover &__burger {
+        stroke: $cyan-dark;
+    }
+
+    &__logo {
+        color: $dark-color;
+        text-align: right;
+        font-family: "Dela Gothic One";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.32px;
+        width: 146px;
+        text-align: right;
+    }
+
+    &__list {
+        display: none;
+    }
+
+    &__item {}
+
+    &__link {}
+
+    &__arrow {}
+
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__avatar {
+        color: $cyan-dark;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.4;
+        letter-spacing: -0.48px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        background: $cyan-light;
+    }
+
+    &__name {
+        color: $grey-dark;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.48px;
+    }
+
+    &__acordion {
+        fill: none;
+        stroke: $grey-dark;
+    }
+
+    &__sign {
+        display: none;
+    }
+
+    &__text {}
+
+    &__icon {}
+}
+
+@media screen and (min-width: 1210px) {
+    .header {
+        padding: 24px 0;
+
+        & .container {
+            justify-content: start;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__burger {}
+
+        &__logo {
+            width: auto;
+            font-size: 20.861px;
+            letter-spacing: -0.417px;
+        }
+
+        &__list {
+            display: flex;
+            border-left: 1px solid $grey-medium;
+            padding-left: 30px;
+            margin-left: 30px;
+            gap: 30px;
+        }
+
+        &__item {}
+
+        &__link {
+            display: flex;
+            align-items: center;
+            color: $grey-dark;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            letter-spacing: -0.64px;
+
+            &:hover {
+                color: $cyan-dark;
+            }
+
+            &--accent {
+                color: $dark-color;
+            }
+        }
+
+        &__link:hover &__arrow {
+            stroke: $cyan-dark;
+        }
+
+        &__arrow {
+            fill: none;
+            stroke: $grey-dark;
+        }
+
+        &__user {
+            gap: 0;
+            margin-left: auto;
+        }
+
+        &__avatar {
+            line-height: 1.4;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            background: $cyan-light;
+            font-size: 16px;
+            letter-spacing: -0.64px;
+            margin-right: 10px;
+        }
+
+        &__name {
+            font-size: 16px;
+            letter-spacing: -0.64px;
+            margin-right: 30px;
+        }
+
+        &__acordion {
+            display: none;
+        }
+
+        &__sign {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        &__text {
+            color: $dark-color;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.64px;
+        }
+
+        &__sign:hover &__text {
+            color: $cyan-dark;
+        }
+
+        &__sign:hover &__icon {
+            fill: $cyan-dark;
+        }
+    }
+}
