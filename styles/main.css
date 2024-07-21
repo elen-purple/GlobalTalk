@@ -594,6 +594,8 @@ body {
   margin-bottom: 16px;
 }
 .increase__btn {
+  max-width: -moz-max-content;
+  max-width: max-content;
   color: #2b788b;
   font-size: 14px;
   font-weight: 700;
@@ -683,6 +685,8 @@ body {
   margin-bottom: 16px;
 }
 .watch__btn {
+  max-width: -moz-max-content;
+  max-width: max-content;
   display: flex;
   padding: 12px 20px;
   align-items: center;

@@ -26,6 +26,7 @@
     }
 
     &__btn {
+        max-width: max-content;
         color: $cyan-dark;
         font-size: 14px;
         font-weight: 700;
