@@ -22,7 +22,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <button class="header__menu">
+        <button data-menu-open class="header__menu">
           <svg class="header__burger" width="24" height="24">
             <use href="./svg/icons.svg#burger"></use>
           </svg>
@@ -376,11 +376,11 @@
         </div>
       </div>
     </footer>
-    <div class="menu">
+    <div data-menu class="menu is-hidden">
       <div class="menu__modal">
-        <div class="modal__header">
+        <div class="menu__header">
           <div class="container">
-            <button class="menu__menu">
+            <button data-menu-close class="menu__menu">
               <svg class="menu__burger" width="24" height="24">
                 <use href="./svg/icons.svg#dagger"></use>
               </svg>
@@ -395,26 +395,27 @@
             </div>
           </div>
         </div>
-        <div class="modal__content">
-          <ul class="modal__list">
-            <li class="header__item">
-              <a href="./index.html" class="header__link">Main</a>
+        <div class="menu__content">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link menu__link--accent">Main</a>
             </li>
-            <li class="header__item">
-              <a href="" class="header__link">Textbook</a>
+            <li class="menu__item">
+              <a href="" class="menu__link">Textbook</a>
             </li>
-            <li class="header__item">
-              <a href="" class="header__link">Statistics</a>
+            <li class="menu__item">
+              <a href="" class="menu__link">Statistics</a>
             </li>
-            <li class="header__item">
-              <a href="./sprint.html" class="header__link">Sprint</a>
+            <li class="menu__item">
+              <a href="./sprint.html" class="menu__link">Sprint</a>
             </li>
-            <li class="header__item">
-              <a href="" class="header__link">Audio-call</a>
+            <li class="menu__item">
+              <a href="" class="menu__link">Audio-call</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
