@@ -55,7 +55,6 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  outline: darkred dashed;
 }
 @media screen and (min-width: 375px) {
   .container {
@@ -567,5 +566,94 @@ body {
   }
   .learn__item:nth-child(2) .learn__arrow {
     fill: #2b788b;
+  }
+}
+.increase {
+  background-color: #f6f5f4;
+  padding-top: 40px;
+}
+.increase__title {
+  color: #000;
+  text-align: center;
+  font-family: "Dela Gothic One";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.96px;
+  margin-bottom: 8px;
+}
+.increase__desc {
+  color: #757575;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.56px;
+  max-width: 306px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.increase__btn {
+  color: #2b788b;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.56px;
+  border-radius: 100px;
+  background: #c3dce3;
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 2px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+.increase__btn:hover {
+  color: #fff;
+  background-color: #2b788b;
+}
+.increase__icon {
+  fill: #2b788b;
+}
+.increase__btn:hover .increase__icon {
+  fill: #fff;
+}
+@media screen and (min-width: 1210px) {
+  .increase {
+    background-color: #f6f5f4;
+    padding-top: 26px;
+  }
+  .increase .container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: end;
+  }
+  .increase__text {
+    width: 475px;
+  }
+  .increase__title {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 48px;
+    letter-spacing: -1.92px;
+  }
+  .increase__desc {
+    text-align: left;
+    max-width: 396px;
+    margin: 0;
+    margin-bottom: 34px;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+  }
+  .increase__btn {
+    padding: 14px 22px;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
+  .increase__icon {
+    width: 9px;
+    height: 9px;
   }
 }/*# sourceMappingURL=main.css.map */
