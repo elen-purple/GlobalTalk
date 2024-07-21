@@ -119,89 +119,99 @@
         </div>
       </section>
       <section class="learn">
-        <picture>
-          <source
-            srcset="
-              ./imgs/desktop/learn/learn-img@1x-desktop.webp 1x,
-              ./imgs/desktop/learn/learn-img@2x-desktop.webp 2x
-            "
-            media="(min-width: 1210px)"
-          />
-          <source
-            srcset="
-              ./imgs/mobile/learn/learn-img@1x-mobile.webp 1x,
-              ./imgs/mobile/learn/learn-img@2x-mobile.webp 2x
-            "
-            media="(max-width: 1209px)"
-          />
-          <img
-            class="learn__img"
-            width="933"
-            height="601"
-            src="./imgs/mobile/learn/learn-img@1x-mobile.webp 1x"
-            alt="Learn img"
-          />
-        </picture>
-        <h2 class="learn__title">Learn a language in a playful way</h2>
-        <p class="learn__desc">Make learning words more fun with mini-games</p>
-        <ul class="learn__list">
-          <li class="learn__item">
-            <picture>
-              <source
-                srcset="
-                  ./imgs/desktop/learn/learn-1@1x-desktop.webp 1x,
-                  ./imgs/desktop/learn/learn-1@2x-desktop.webp 2x
-                "
-                media="(min-width: 1210px)"
-              />
-              <source
-                srcset="
-                  ./imgs/mobile/learn/learn-1@1x-mobile.webp 1x,
-                  ./imgs/mobile/learn/learn-1@2x-mobile.webp 2x
-                "
-                media="(max-width: 1209px)"
-              />
-              <img
-                class="learn__icon"
-                width="933"
-                height="601"
-                src="./imgs/mobile/learn/learn-1@1x-mobile.webp 1x"
-                alt="Learn img"
-              />
-            </picture>
-            <a href="./sprint.html" class="learn__link">
-              <p class="learn__text">Sprint</p>
-            </a>
-          </li>
-          <li class="learn__item">
-            <picture>
-              <source
-                srcset="
-                  ./imgs/desktop/learn/learn-2@1x-desktop.webp 1x,
-                  ./imgs/desktop/learn/learn-2@2x-desktop.webp 2x
-                "
-                media="(min-width: 1210px)"
-              />
-              <source
-                srcset="
-                  ./imgs/mobile/learn/learn-2@1x-mobile.webp 1x,
-                  ./imgs/mobile/learn/learn-2@2x-mobile.webp 2x
-                "
-                media="(max-width: 1209px)"
-              />
-              <img
-                class="learn__icon"
-                width="933"
-                height="601"
-                src="./imgs/mobile/learn/learn-2@1x-mobile.webp 1x"
-                alt="Learn img"
-              />
-            </picture>
-            <a href="" class="learn__link">
-              <p class="learn__text">Audio-call</p>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <picture>
+            <source
+              srcset="
+                ./imgs/desktop/learn/learn-img@1x-desktop.webp 1x,
+                ./imgs/desktop/learn/learn-img@2x-desktop.webp 2x
+              "
+              media="(min-width: 1210px)"
+            />
+            <source
+              srcset="
+                ./imgs/mobile/learn/learn-img@1x-mobile.webp 1x,
+                ./imgs/mobile/learn/learn-img@2x-mobile.webp 2x
+              "
+              media="(max-width: 1209px)"
+            />
+            <img
+              class="learn__img"
+              width="933"
+              height="601"
+              src="./imgs/mobile/learn/learn-img@1x-mobile.webp 1x"
+              alt="Learn img"
+            />
+          </picture>
+          <div class="learn__text">
+            <h2 class="learn__title">Learn a language in a playful way</h2>
+            <p class="learn__desc">Make learning words more fun with mini-games</p>
+            <ul class="learn__list">
+              <li class="learn__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./imgs/desktop/learn/learn-1@1x-desktop.webp 1x,
+                      ./imgs/desktop/learn/learn-1@2x-desktop.webp 2x
+                    "
+                    media="(min-width: 1210px)"
+                  />
+                  <source
+                    srcset="
+                      ./imgs/mobile/learn/learn-1@1x-mobile.webp 1x,
+                      ./imgs/mobile/learn/learn-1@2x-mobile.webp 2x
+                    "
+                    media="(max-width: 1209px)"
+                  />
+                  <img
+                    class="learn__icon"
+                    width="933"
+                    height="601"
+                    src="./imgs/mobile/learn/learn-1@1x-mobile.webp 1x"
+                    alt="Learn img"
+                  />
+                </picture>
+                <a href="./sprint.html" class="learn__link">
+                  <p class="learn__info">Sprint</p>
+                  <svg class="learn__arrow" width="8" height="8">
+                    <use href="./svg/icons.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="learn__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./imgs/desktop/learn/learn-2@1x-desktop.webp 1x,
+                      ./imgs/desktop/learn/learn-2@2x-desktop.webp 2x
+                    "
+                    media="(min-width: 1210px)"
+                  />
+                  <source
+                    srcset="
+                      ./imgs/mobile/learn/learn-2@1x-mobile.webp 1x,
+                      ./imgs/mobile/learn/learn-2@2x-mobile.webp 2x
+                    "
+                    media="(max-width: 1209px)"
+                  />
+                  <img
+                    class="learn__icon"
+                    width="933"
+                    height="601"
+                    src="./imgs/mobile/learn/learn-2@1x-mobile.webp 1x"
+                    alt="Learn img"
+                  />
+                </picture>
+                <a href="" class="learn__link">
+                  <p class="learn__info">Audio-call</p>
+                  <svg class="learn__arrow" width="8" height="8">
+                    <use href="./svg/icons.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   </body>
