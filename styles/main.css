@@ -321,6 +321,7 @@ body {
 }
 @media screen and (min-width: 1210px) {
   .hero {
+    overflow: hidden;
     padding: 183px 0 135px;
   }
   .hero .container {
@@ -558,8 +559,8 @@ body {
     color: #2b788b;
   }
   .learn__arrow {
-    min-width: 8px;
-    min-height: 8px;
+    min-width: 9px;
+    min-height: 9px;
   }
   .learn__item:nth-child(1) .learn__arrow {
     fill: #945069;
