@@ -1,0 +1,110 @@
+.watch {
+    padding: 40px 0;
+
+    &__img {
+        margin-bottom: 20px;
+    }
+
+    &__text {}
+
+    &__title {
+        color: $dark-color;
+        text-align: center;
+        font-family: "Dela Gothic One";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.96px;
+        margin-bottom: 8px;
+    }
+
+    &__desc {
+        color: $grey-dark;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.56px;
+        margin-bottom: 16px;
+    }
+
+    &__btn {
+        display: flex;
+        padding: 12px 20px;
+        align-items: center;
+        gap: 2px;
+        color: $cyan-dark;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.56px;
+        border-radius: 100px;
+        background: $cyan-light;
+        margin: 0 auto;
+
+        &:hover {
+            color: $white;
+            background-color: $cyan-dark;
+        }
+    }
+
+    &__info {}
+
+    &__icon {
+        fill: $cyan-dark;
+    }
+
+    &__btn:hover &__icon {
+        fill: $white;
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .watch {
+        padding: 95px 0;
+
+        & .container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &__img {
+            margin-bottom: 0;
+            width: 680px;
+        }
+
+        &__text {}
+
+        &__title {
+            text-align: left;
+            letter-spacing: -0.96px;
+            margin-bottom: 30px;
+            font-size: 48px;
+            letter-spacing: -1.92px;
+        }
+
+        &__desc {
+            text-align: left;
+            letter-spacing: -0.56px;
+            margin-bottom: 34px;
+            width: 396.886px;
+            font-size: 18px;
+            letter-spacing: -0.72px;
+        }
+
+        &__btn {
+            padding: 14px 22px;
+            font-size: 16px;
+            letter-spacing: -0.56px;
+            margin: 0;
+        }
+
+        &__info {}
+
+        &__icon {
+            width: 9px;
+            height: 9px;
+        }
+    }
+}
