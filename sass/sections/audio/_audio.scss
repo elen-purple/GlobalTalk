@@ -1,0 +1,291 @@
+.audio {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    background-color: $grey-light;
+
+    &__container {
+        background-color: $white;
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+    }
+
+    &__imgblock {
+        background-color: $cyan-light;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    &__img {}
+
+    &__block {}
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        color: $dark-color;
+        font-family: "Dela Gothic One";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.96px;
+    }
+
+    &__task {
+        color: $cyan-dark;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.4px;
+        padding: 4px 8px;
+        background-color: $cyan-light;
+        border-radius: 6px;
+    }
+
+    &__info {
+        color: $grey-dark;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.56px;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        color: $grey-dark;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.56px;
+        margin-bottom: 8px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 375px) {
+            column-gap: 54px;
+            row-gap: 12px;
+            flex-direction: column;
+            height: 100px;
+        }
+    }
+
+    &__item {
+        line-height: 0;
+    }
+
+    &__level {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.64px;
+    }
+
+    &__item:nth-child(1) &__level {
+        border: 3px solid $secondary-green;
+        color: $secondary-green;
+
+        &:hover {
+            background-color: rgba(99, 155, 109, 0.30);
+        }
+
+        &:focus {
+            background-color: $secondary-green;
+            color: $white;
+        }
+    }
+
+    &__item:nth-child(2) &__level {
+        border: 3px solid $secondary-yellow;
+        color: $secondary-yellow;
+
+        &:hover {
+            background-color: rgba(196, 162, 76, 0.30);
+        }
+
+        &:focus {
+            background-color: $secondary-yellow;
+            color: $white;
+        }
+    }
+
+    &__item:nth-child(3) &__level {
+        border: 3px solid $secondary-orange;
+        color: $secondary-orange;
+
+        &:hover {
+            background-color: rgba(203, 91, 67, 0.30);
+        }
+
+        &:focus {
+            background-color: $secondary-orange;
+            color: $white;
+        }
+    }
+
+    &__item:nth-child(4) &__level {
+        border: 3px solid $secondary-red;
+        color: $secondary-red;
+
+        &:hover {
+            background-color: rgba(169, 81, 81, 0.30);
+        }
+
+        &:focus {
+            background-color: $secondary-red;
+            color: $white;
+        }
+    }
+
+    &__item:nth-child(5) &__level {
+        border: 3px solid $secondary-pink;
+        color: $secondary-pink;
+
+        &:hover {
+            background-color: rgba(161, 89, 147, 0.30);
+        }
+
+        &:focus {
+            background-color: $secondary-pink;
+            color: $white;
+        }
+    }
+
+    &__item:nth-child(6) &__level {
+        border: 3px solid $secondary-cyan;
+        color: $secondary-cyan;
+
+        &:hover {
+            background-color: rgba(89, 150, 165, 0.30);
+        }
+
+        &:focus {
+            background-color: $secondary-cyan;
+            color: $white;
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: max-content;
+        padding: 12px 20px;
+        border-radius: 100px;
+        background: $cyan-dark;
+        color: $white;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.56px;
+        margin: 0 auto;
+
+        &:hover {
+            box-shadow: 0px 5px 5px 0px $cyan-light;
+        }
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .audio {
+        padding-top: 188px;
+        padding-bottom: 100px;
+
+        &__container {
+            padding: 20px 40px;
+            display: flex;
+            gap: 10px;
+            width: 792px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        &__imgblock {
+            background-color: transparent;
+            width: auto;
+            height: auto;
+            border-radius: 0;
+            margin: 0;
+        }
+
+        &__img {
+            width: 250px;
+            height: 400px;
+        }
+
+        &__block {
+            width: 452px;
+        }
+
+        &__header {
+            justify-content: start;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        &__title {
+            font-size: 48px;
+            letter-spacing: -1.92px;
+        }
+
+        &__task {
+            padding: 4px 8px;
+            background-color: $cyan-light;
+            border-radius: 6px;
+            font-size: 12px;
+            letter-spacing: -0.48px;
+        }
+
+        &__info {
+            margin-bottom: 30px;
+            font-size: 16px;
+            letter-spacing: -0.64px;
+            text-align: left;
+            width: 383px;
+        }
+
+        &__subtitle {}
+
+        &__list {
+            justify-content: start;
+            flex-wrap: nowrap;
+            margin-bottom: 30px;
+            gap: 24px;
+        }
+
+        &__item {}
+
+        &__level {}
+
+        &__btn {
+            padding: 14px 22px;
+            font-size: 16px;
+            letter-spacing: -0.64px;
+            margin: 0;
+        }
+    }
+}
