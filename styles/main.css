@@ -220,6 +220,9 @@ body {
   .header__link:hover .header__arrow {
     stroke: #2b788b;
   }
+  .header__link--accent .header__arrow {
+    stroke: #000;
+  }
   .header__arrow {
     fill: none;
     stroke: #757575;

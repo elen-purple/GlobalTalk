@@ -194,6 +194,10 @@
             stroke: $cyan-dark;
         }
 
+        &__link--accent &__arrow {
+            stroke: $dark-color;
+        }
+
         &__arrow {
             fill: none;
             stroke: $grey-dark;
