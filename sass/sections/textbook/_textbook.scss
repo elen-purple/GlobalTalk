@@ -1,0 +1,338 @@
+.textbook {
+    overflow: hidden;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background-color: $grey-light;
+
+
+    &__header {
+        background-color: $white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 14px;
+        box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+        margin-bottom: 30px;
+    }
+
+    &__logo {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__hat {
+        fill: $dark-color
+    }
+
+    &__title {
+        color: $dark-color;
+        font-family: "Dela Gothic One";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        /* 20px */
+        letter-spacing: -0.8px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 2px;
+    }
+
+    &__sending {
+        border-radius: 11px;
+        display: flex;
+        align-items: center;
+
+        &:nth-child(1) {
+            background-color: $pink-light;
+            gap: 7px;
+            width: 114px;
+        }
+
+        &:nth-child(2) {
+            background-color: $cyan-light;
+            gap: 9px;
+            width: 139px;
+        }
+    }
+
+    &__picture {
+        border-radius: 11px;
+        width: 35px;
+        height: 35px;
+    }
+
+    &__link {
+        font-size: 12.548px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.502px;
+    }
+
+    &__sending:nth-child(1) &__link {
+        color: $pink-dark;
+    }
+
+    &__sending:nth-child(2) &__link {
+        color: $cyan-dark;
+    }
+
+    &__settings {
+        border-radius: 4px;
+        background: $grey-light;
+        padding: 6px;
+        line-height: 0;
+
+        &:hover {
+            background: $cyan-dark;
+        }
+    }
+
+    &__tools {
+        fill: $grey-icon;
+    }
+
+    &__settings:hover &__tools {
+        fill: $white;
+    }
+
+    &__levels {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+        margin-bottom: 37px;
+    }
+
+    &__level {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        position: relative;
+
+        &--checked::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $dark-color;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+        }
+    }
+
+    &__sign {
+        color: $grey-dark;
+        font-family: "Dela Gothic One";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.72px;
+    }
+
+    &__level--checked &__sign {
+        color: $dark-color;
+    }
+
+    &__regime {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.4px;
+        padding: 3px 6px;
+        border-radius: 3px;
+    }
+
+    &__level--checked &__regime {
+        background-color: $secondary-green;
+        color: $white;
+    }
+
+    &__level:nth-child(2) &__regime {
+        background-color: rgba(99, 155, 109, 0.30);
+        color: $secondary-green;
+    }
+
+    &__level:nth-child(3) &__regime,
+    &__level:nth-child(4) &__regime {
+        background-color: rgba(196, 162, 76, 0.30);
+        color: $secondary-yellow;
+    }
+
+    &__level:nth-child(5) &__regime,
+    &__level:nth-child(6) &__regime {
+        background-color: rgba(203, 91, 67, 0.30);
+        color: $secondary-red;
+    }
+
+    &__words {}
+
+    &__word {
+        border-radius: 14px;
+        background-color: $white;
+        box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+        overflow: hidden;
+    }
+
+    &__word:nth-child(2),
+    &__word:nth-child(3) {
+        display: none;
+    }
+
+    &__overflow {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__img {}
+
+    &__properties {
+        border-radius: 8px 0px 0px 8px;
+        background: rgba(0, 0, 0, 0.70);
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 4px;
+        width: max-content;
+        position: absolute;
+        bottom: 16px;
+        right: -83px;
+
+        &:hover {
+            right: 0;
+        }
+    }
+
+    &__property {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__sign {
+        fill: $white;
+    }
+
+    &__num {
+        color: $white;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.48px;
+    }
+
+    &__text {
+        color: $white;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.48px;
+    }
+
+    &__block {
+        padding: 20px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-family: "Dela Gothic One";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.96px;
+        margin-bottom: 12px;
+    }
+
+    &__name {
+        color: $dark-color;
+    }
+
+    &__slash {
+        display: none;
+    }
+
+    &__synonym {
+        color: $grey-dark;
+    }
+
+    &__audio {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+        border-radius: 4px;
+        background: $grey-light;
+
+        &:hover {
+            background-color: $cyan-dark;
+        }
+    }
+
+    &__play {
+        fill: $grey-icon;
+    }
+
+    &__audio:hover &__play {
+        fill: $white;
+    }
+
+    &__transcription {
+        color: $dark-color;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: 0.48px;
+        margin-bottom: 8px;
+    }
+
+    &__remark {
+        color: $dark-color;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.48px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid $grey-medium;
+        margin-bottom: 12px;
+    }
+
+    &__speed {
+        color: $grey-dark;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.48px;
+    }
+
+    &__list {
+        display: none;
+    }
+
+    &__item {}
+
+    &__arrow {}
+
+    &__icon {}
+
+    &__btn {}
+
+    &__page {}
+
+    &__dots {}
+}
