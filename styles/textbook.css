@@ -513,10 +513,8 @@ body {
   color: #000;
   font-family: "Dela Gothic One";
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 100%;
-  /* 20px */
+  line-height: 1;
   letter-spacing: -0.8px;
 }
 .textbook__wrapper {
@@ -664,7 +662,7 @@ body {
   gap: 8px;
   align-items: center;
 }
-.textbook__sign {
+.textbook__token {
   fill: #fff;
 }
 .textbook__num {
@@ -687,6 +685,7 @@ body {
 .textbook__top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 12px;
 }
 .textbook__subtitle {
   display: flex;
@@ -697,7 +696,6 @@ body {
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.96px;
-  margin-bottom: 12px;
 }
 .textbook__name {
   color: #000;
@@ -754,4 +752,214 @@ body {
 }
 .textbook__list {
   display: none;
+}
+@media screen and (min-width: 1210px) {
+  .textbook {
+    padding-top: 128px;
+    padding-bottom: 100px;
+  }
+  .textbook__header {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .textbook__logo {
+    gap: 10px;
+  }
+  .textbook__title {
+    font-size: 26px;
+    letter-spacing: -1.04px;
+  }
+  .textbook__wrapper {
+    justify-content: start;
+    width: auto;
+    gap: 10px;
+  }
+  .textbook__sending {
+    border-radius: 14px;
+  }
+  .textbook__sending:nth-child(1) {
+    gap: 9px;
+    width: 146px;
+  }
+  .textbook__sending:nth-child(2) {
+    gap: 15px;
+    width: 178px;
+  }
+  .textbook__picture {
+    border-radius: 14px;
+    width: 44px;
+    height: 44px;
+  }
+  .textbook__link {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
+  .textbook__settings {
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+  }
+  .textbook__levels {
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 54px;
+  }
+  .textbook__level {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    position: relative;
+  }
+  .textbook__level--checked::after {
+    bottom: -14px;
+    height: 2px;
+  }
+  .textbook__sign {
+    font-size: 26px;
+    letter-spacing: -1.04px;
+  }
+  .textbook__regime {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
+  .textbook__words {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .textbook__word {
+    display: flex;
+    width: 926px;
+  }
+  .textbook__word:nth-child(2), .textbook__word:nth-child(3) {
+    display: flex;
+  }
+  .textbook__img {
+    width: 337px;
+    height: 273px;
+  }
+  .textbook__properties {
+    gap: 8px;
+    padding: 8px;
+    bottom: 135px;
+    right: -112px;
+  }
+  .textbook__property {
+    gap: 8px;
+  }
+  .textbook__token {
+    width: 16px;
+    height: 16px;
+  }
+  .textbook__num {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
+  .textbook__text {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
+  .textbook__block {
+    padding: 40px;
+    width: 596px;
+    height: 273px;
+  }
+  .textbook__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .textbook__subtitle {
+    flex-direction: row;
+    gap: 12px;
+    font-size: 32px;
+    letter-spacing: -1.28px;
+    height: 32px;
+  }
+  .textbook__slash {
+    display: block;
+  }
+  .textbook__transcription {
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 0.72px;
+  }
+  .textbook__remark {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    width: 516px;
+  }
+  .textbook__speed {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    width: 516px;
+  }
+  .textbook__list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .textbook__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 3px solid #2b788b;
+    width: 44px;
+    height: 44px;
+  }
+  .textbook__arrow:hover {
+    background-color: rgba(89, 150, 165, 0.3);
+  }
+  .textbook__arrow:focus {
+    background-color: #2b788b;
+  }
+  .textbook__arrow:focus .textbook__icon {
+    fill: #fff;
+  }
+  .textbook__icon {
+    fill: #2b788b;
+  }
+  .textbook__item:nth-child(1) .textbook__icon {
+    transform: rotate(180deg);
+  }
+  .textbook__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 3px solid #2b788b;
+    width: 44px;
+    height: 44px;
+  }
+  .textbook__btn:hover {
+    background-color: rgba(89, 150, 165, 0.3);
+  }
+  .textbook__btn:focus {
+    background-color: #2b788b;
+  }
+  .textbook__btn:focus .textbook__page {
+    color: #fff;
+  }
+  .textbook__page {
+    color: #2b788b;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.64px;
+  }
+  .textbook__dots {
+    color: #757575;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.72px;
+    padding-top: 19px;
+  }
 }/*# sourceMappingURL=textbook.css.map */

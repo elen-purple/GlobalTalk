@@ -30,10 +30,8 @@
         color: $dark-color;
         font-family: "Dela Gothic One";
         font-size: 20px;
-        font-style: normal;
         font-weight: 400;
-        line-height: 100%;
-        /* 20px */
+        line-height: 1;
         letter-spacing: -0.8px;
     }
 
@@ -216,7 +214,7 @@
         align-items: center;
     }
 
-    &__sign {
+    &__token {
         fill: $white;
     }
 
@@ -243,6 +241,7 @@
     &__top {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 12px;
     }
 
     &__subtitle {
@@ -254,7 +253,6 @@
         font-weight: 400;
         line-height: 1;
         letter-spacing: -0.96px;
-        margin-bottom: 12px;
     }
 
     &__name {
@@ -335,4 +333,275 @@
     &__page {}
 
     &__dots {}
+}
+
+@media screen and (min-width: 1210px) {
+    .textbook {
+        padding-top: 128px;
+        padding-bottom: 100px;
+
+
+        &__header {
+            flex-direction: row;
+            gap: 0;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        &__logo {
+            gap: 10px;
+        }
+
+        &__hat {}
+
+        &__title {
+            font-size: 26px;
+            letter-spacing: -1.04px;
+        }
+
+        &__wrapper {
+            justify-content: start;
+            width: auto;
+            gap: 10px;
+        }
+
+        &__sending {
+            border-radius: 14px;
+
+            &:nth-child(1) {
+                gap: 9px;
+                width: 146px;
+            }
+
+            &:nth-child(2) {
+                gap: 15px;
+                width: 178px;
+            }
+        }
+
+        &__picture {
+            border-radius: 14px;
+            width: 44px;
+            height: 44px;
+        }
+
+        &__link {
+            font-size: 16px;
+            letter-spacing: -0.64px;
+        }
+
+        &__settings {
+            padding: 8px;
+            width: 40px;
+            height: 40px;
+        }
+
+        &__levels {
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 54px;
+        }
+
+        &__level {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            position: relative;
+
+            &--checked::after {
+                bottom: -14px;
+                height: 2px;
+            }
+        }
+
+        &__sign {
+            font-size: 26px;
+            letter-spacing: -1.04px;
+        }
+
+        &__regime {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            letter-spacing: -0.48px;
+        }
+
+        &__words {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        &__word {
+            display: flex;
+            width: 926px;
+        }
+
+        &__word:nth-child(2),
+        &__word:nth-child(3) {
+            display: flex;
+        }
+
+        &__overflow {}
+
+        &__img {
+            width: 337px;
+            height: 273px;
+        }
+
+        &__properties {
+            gap: 8px;
+            padding: 8px;
+            bottom: 135px;
+            right: -112px;
+        }
+
+        &__property {
+            gap: 8px;
+        }
+
+        &__token {
+            width: 16px;
+            height: 16px;
+        }
+
+        &__num {
+            font-size: 16px;
+            letter-spacing: -0.64px;
+        }
+
+        &__text {
+            font-size: 16px;
+            letter-spacing: -0.64px;
+        }
+
+        &__block {
+            padding: 40px;
+            width: 596px;
+            height: 273px;
+        }
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__subtitle {
+            flex-direction: row;
+            gap: 12px;
+            font-size: 32px;
+            letter-spacing: -1.28px;
+            height: 32px;
+        }
+
+        &__name {}
+
+        &__slash {
+            display: block;
+        }
+
+        &__synonym {}
+
+        &__audio {}
+
+        &__play {}
+
+        &__transcription {
+            margin-bottom: 20px;
+            font-size: 18px;
+            letter-spacing: 0.72px;
+        }
+
+        &__remark {
+            font-size: 16px;
+            letter-spacing: -0.64px;
+            width: 516px;
+        }
+
+        &__speed {
+            font-size: 16px;
+            letter-spacing: -0.64px;
+            width: 516px;
+        }
+
+        &__list {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        &__item {}
+
+        &__arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border: 3px solid $cyan-dark;
+            width: 44px;
+            height: 44px;
+
+            &:hover {
+                background-color: rgba(89, 150, 165, 0.30);
+            }
+
+            &:focus {
+                background-color: $cyan-dark;
+            }
+        }
+
+        &__arrow:focus &__icon {
+            fill: $white;
+        }
+
+        &__icon {
+            fill: $cyan-dark;
+        }
+
+        &__item:nth-child(1) &__icon {
+            transform: rotate(180deg);
+        }
+
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border: 3px solid $cyan-dark;
+            width: 44px;
+            height: 44px;
+
+            &:hover {
+                background-color: rgba(89, 150, 165, 0.30);
+            }
+
+            &:focus {
+                background-color: $cyan-dark;
+            }
+        }
+
+        &__btn:focus &__page {
+            color: $white;
+        }
+
+        &__page {
+            color: $cyan-dark;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.64px;
+        }
+
+        &__dots {
+            color: $grey-dark;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;
+            letter-spacing: 0.72px;
+            padding-top: 19px;
+        }
+    }
 }
