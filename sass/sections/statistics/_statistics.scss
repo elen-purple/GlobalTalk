@@ -1,0 +1,392 @@
+.statistics {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background-color: $grey-light;
+
+    &__intervals {
+        display: flex;
+        max-width: 281px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    &__interval {}
+
+    &__btn {
+        background-color: transparent;
+        color: $grey-dark;
+        font-family: "Dela Gothic One";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.72px;
+
+        &:hover {
+            color: $cyan-dark;
+
+
+        }
+
+        &--checked:hover::after {
+            background-color: $cyan-dark;
+        }
+
+        &--checked {
+            color: $dark-color;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: $dark-color;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    &__block {
+        padding: 20px;
+        background-color: $white;
+        border-radius: 14px;
+        box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+    }
+
+    &__picture {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        margin-bottom: 4px;
+    }
+
+    &__title {
+        color: $dark-color;
+        text-align: center;
+        font-family: "Dela Gothic One";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.96px;
+        margin-bottom: 8px;
+    }
+
+    &__desc {
+        color: $grey-dark;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.56px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+
+        &:nth-child(1) {
+            padding-right: 20px;
+            border-right: 1px solid $grey-medium;
+            margin-right: 20px;
+        }
+    }
+
+    &__num {
+        color: $dark-color;
+        font-family: "Dela Gothic One";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.48px;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    &__accent {
+        color: $cyan-dark;
+    }
+
+    &__caption {
+        text-align: center;
+        color: $grey-dark;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.48px;
+    }
+
+    &__lessons {}
+
+    &__lesson {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media screen and (min-width: 375px) {
+            flex-direction: row;
+        }
+
+        &:nth-child(1) {
+            padding-bottom: 20px;
+            border-bottom: 1px solid $grey-medium;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__icon {
+        width: 70px;
+        height: 112px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 375px) {
+            margin: 0;
+        }
+    }
+
+    &__text {
+        min-width: auto;
+
+        @media screen and (min-width: 375px) {
+            min-width: 205px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 375px) {
+            justify-content: start;
+        }
+    }
+
+    &__subtitile {
+        color: $dark-color;
+        font-family: "Dela Gothic One";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.8px;
+    }
+
+    &__regime {
+        color: $cyan-dark;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.4px;
+        border-radius: 6px;
+        background: $cyan-light;
+        padding: 4px 8px;
+    }
+
+    &__arrivals {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__arrival {}
+
+    &__info {
+        text-align: center;
+        color: $grey-dark;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.48px;
+
+        @media screen and (min-width: 375px) {
+            text-align: start;
+        }
+    }
+
+    &__numeric {
+        color: $dark-color;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: -0.56px;
+    }
+
+    &__graph {
+        padding: 12px 4px;
+        background-color: $white;
+        border-radius: 14px;
+        box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+    }
+
+    &__img {
+        max-width: 327px;
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .statistics {
+        padding-top: 188px;
+        padding-bottom: 100px;
+        background-color: $grey-light;
+
+        &__intervals {
+            max-width: max-content;
+            justify-content: start;
+            margin-bottom: 54px;
+            gap: 40px;
+        }
+
+        &__interval {}
+
+        &__btn {
+            font-size: 26px;
+            letter-spacing: -1.04px;
+
+            &--checked::after {
+                height: 2px;
+                bottom: -14px;
+            }
+        }
+
+        &__content {
+            gap: 10px;
+            flex-direction: row;
+        }
+
+        &__block {
+            width: 582px;
+            height: 511px;
+            padding: 40px;
+
+        }
+
+        &__picture {
+            display: none;
+        }
+
+        &__title {
+            text-align: start;
+            margin-bottom: 12px;
+            font-size: 32px;
+            letter-spacing: -1.28px;
+        }
+
+        &__desc {
+            text-align: start;
+            margin-bottom: 20px;
+            font-size: 16px;
+            letter-spacing: -0.64px;
+        }
+
+        &__list {}
+
+        &__item {
+            width: 202px;
+            height: 65px;
+
+            &:nth-child(1) {
+                padding-right: 48px;
+                margin-right: 48px;
+            }
+        }
+
+        &__num {
+            font-size: 40px;
+            letter-spacing: -0.8px;
+        }
+
+        &__accent {
+            color: $cyan-dark;
+        }
+
+        &__caption {
+            font-size: 16px;
+            letter-spacing: -0.64px;
+        }
+
+        &__lessons {}
+
+        &__lesson {
+            justify-content: start;
+            gap: 20px;
+
+            &:nth-child(1) {
+                padding-bottom: 18px;
+                margin-bottom: 18px;
+            }
+        }
+
+        &__icon {
+            width: 70px;
+            height: 112px;
+        }
+
+        &__text {
+            min-width: auto;
+
+            @media screen and (min-width: 375px) {
+                min-width: 205px;
+            }
+        }
+
+        &__top {
+            margin-bottom: 16px;
+        }
+
+        &__subtitile {
+            font-size: 26px;
+            letter-spacing: -1.04px;
+        }
+
+        &__regime {
+            border-radius: 6px;
+            background: $cyan-light;
+            padding: 4px 8px;
+            font-size: 12px;
+            letter-spacing: -0.48px;
+        }
+
+        &__arrivals {}
+
+        &__arrival {}
+
+        &__info {
+            font-size: 16px;
+            letter-spacing: -0.56px;
+        }
+
+        &__numeric {
+            font-size: 16px;
+            letter-spacing: -0.64px;
+        }
+
+        &__graph {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 588px;
+            height: 511px;
+            padding: 0;
+        }
+
+        &__img {
+            max-width: 508px;
+            height: 251.5px;
+        }
+    }
+}
